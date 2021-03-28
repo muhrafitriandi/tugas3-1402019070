@@ -1,0 +1,99 @@
+.hasil-hitung {
+    margin-top: 3rem;
+    display: none;
+}
+
+.hasil-judul {
+    font-size: 2rem;
+    line-height: 2.25rem;
+}
+
+.tampilkan-hasil {
+    margin-left: 5px;
+}
+
+.container {
+    width: 500px;
+    height: 520px;
+    margin: 120px auto;
+    background: white;
+    position: relative;
+    box-shadow: 10px 10px 5px grey;
+}
+
+.container h1 {
+    margin: 0;
+    padding: 0;
+    font font-family:  arial;
+    font-size: 3em;
+    color: #555;
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+    top: 5%;
+    transform: translateY(-50%);
+}
+
+.input-label-content-3-9 {
+    color: #39465B;
+    font-size: 1rem;
+    line-height: 1.75rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.div-input-content-3-9 {
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    margin-top: 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 300;
+    border-radius: 0.75rem;
+    border: 1px solid #CACBCE;
+    color: #2A3240;
+    text-align: center;
+}
+
+.div-input-content-3-9:focus-within {
+    border: 1px solid #2EC49C;
+    color: #2A3240;
+    text-align: center;
+}
+
+.div-input-content-3-9 input::placeholder {
+    color: #CACBCE;
+    text-align: center;
+}
+
+.div-input-content-3-9:focus-within input::placeholder {
+    color: #2A3240;
+    outline: none;
+    text-align: center;
+}
+
+.div-input-content-3-9:focus-within .icon-content-3-9 path {
+    transition: 0.3;
+    fill: #2EC49C;
+    text-align: center;
+}
+
+.div-input-content-3-9 .icon-toggle-empty-3-9 path {
+    transition: 0.3;
+    fill: #2EC49C;
+    text-align: center;
+}
+
+.input-field-content-3-9 {
+    width: 100%;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 300;
+    background-color: #FCFDFF;
+    border: none;
+    text-align: center;
+}
+
+.input-field-content-3-9:focus {
+    outline: none;
+    text-align: center;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Kalkulator | Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <a href="#home" class="logo">3D Kalkulator<span></span></a>
+    <div id="menu" class="fas fa-bars"></div>
+    <nav class="navbar">
+        <ul>
+            <li><a class="active" href="#home">home</a></li>
+            <li><a href="silinder.html">Silinder</a></li>
+            <li><a href="kerucut.html">Kerucut</a></li>
+            <li><a href="bola.html">Bola</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="home" id="home">
+    <div class="content">
+        <span>The best calculator geometry app</span>
+        <h3 id="greetings"></h3>
+        <p>3D Kalkulator adalah aplikasi yang dapat membantu anda untuk menghitung bangun ruang secara cepat, tepat dan akurat tanpa harus menggunakan rumus.</p>
+        <a href="#calc" class="btn">Gunakan!</a>
+    </div>
+    <div class="image">
+        <img src="https://vectr.com/tmp/c5FwmjXM3/acXFkiz23.svg?width=3861&height=3861&select=a4lJRLrv4" alt="" style="margin-top: 70px">
+    </div>
+</section>
+
+<section class="calc" id="calc">
+    <h1 class="heading"><span>Daftar</span> Bangun Ruang</h1>
+    <div class="box-container">
+        <div class="box">
+            <img src="images/silinder.png" alt="">
+            <h3>Silinder</h3>
+            <p>Menghitung Volume dan Luas Permukaan berdasarkan jari-jari dan tinggi dari Silinder</p>
+            <a href="silinder.html" class="btn">Mulai Menghitung</a>
+        </div>
+
+        <div class="box">
+            <img src="images/kerucut.png" alt="">
+            <h3>Kerucut</h3>
+            <p>Menghitung Volume dan Luas Permukaan berdasarkan jari-jari, garis pelukis dan tinggi dari Kerucut</p>
+            <a href="kerucut.html" class="btn">Mulai Menghitung</a>
+        </div>
+
+        <div class="box">
+            <img src="images/bola.png" alt="">
+            <h3>Bola</h3>
+            <p>Menghitung Volume dan Luas Permukaan berdasarkan jari-jari dari Silinder</p>
+            <a href="bola.html" class="btn">Mulai Menghitung</a>
+        </div>
+    </div>
+</section>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="js/script.js"></script>
+<script src="js/fungsi.js"></script>
+<script>window.greetings()</script>
+</body>
+</html>

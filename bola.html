@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/fungsi.js"></script>    
+    <title>3D Kalkulator | Bola</title>
+</head>
+<body>
+
+	<header>
+	    <a href="index.html" class="logo">3D Kalkulator<span></span></a>
+	    <div id="menu" class="fas fa-bars"></div>
+	    <nav class="navbar">
+	        <ul>
+	            <li><a href="index.html">home</a></li>
+	            <li><a href="silinder.html">Silinder</a></li>
+	            <li><a href="kerucut.html">Kerucut</a></li>
+	            <li><a class="active" href="bola.html">Bola</a></li>
+	        </ul>
+	    </nav>
+	</header>	
+
+	<div class="container">
+	    <center><img src="images/bola.png" style="height: 150px; width: 150px"></center>
+	    <form style="margin-top: 1.5rem; " action=" " method="post ">
+
+	        <div id="div-radius" style="margin-top: 50px; ">
+	            <center><label for=" " class="d-block input-label-content-3-9">Masukkan jari-jari bola (dalam meter):</label></center>
+	            <div class="d-flex w-100 div-input-content-3-9 ">
+	                <center><input id="jarijari" class="input-field-content-3-9" placeholder="Masukkan jari-jari bola "></center>
+	            </div>
+	        </div>
+	            
+	        <center><button class="btn btn-fill-content-3-9 d-block w-100" type="button" onclick="countBola()">Hitung</button></center>
+	    </form>
+
+	    <center><div id="hasilBola" class="hasil-hitung">
+	        <h3 class="hasil-judul">Hasil Perhitungan </h3>
+	            <div class="tampilkan-hasil">
+	                <p id="luasBola">Luas Permukaan Bola: </p>
+	                <p id="volumeBola">Volume Bola: </p>
+	            </div>
+	    </div></center>
+	</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

@@ -4,23 +4,38 @@ setInterval(function(){
   displayTime.textContent = (d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds())
 }, 1000);
 
-// function bdSilinder() {
-//     window.location.href = "silinder.html";
-// }
+function day() {
+    var d = new Date();
+    var s = d.getSeconds();
+    var m = d.getMinutes();
+    var h = parseInt(d.getHours());
+    var waktu = "";
+    if (h >= 0 && h <= 10) {
+        waktu = "Pagi,";
+    } else if (h >= 11 && h <= 14) {
+        waktu = "Siang,";
+    } else if (h >= 14 && h <= 18) {
+        waktu = "Sore,";
+    } else {
+        waktu = "Malam,";
+    }
 
-// function pilihanKerucut() {
-//     window.location.href = "kerucut.html";
-// }
+    return waktu;
+}
 
-// function pilihanBola() {
-//     window.location.href = "bola.html";
-// }
-
-// function scrollDiv() {
-//     var elmnt = document.getElementById('scroll');
-//     elmnt.scrollIntoView();
-//     console.log('tes');
-// }
+function greetings() {
+    var retVal = "";
+    var ulang = true;
+    if (ulang == true) {
+        retVal = prompt("Masukkan nama untuk melanjutkan : ", "your name here");
+        console.log(day());
+        document.getElementById('greetings').innerHTML = "Selamat " + day() + " " + retVal;
+        ulang = false;
+    } else {
+        console.log(day());
+        document.getElementById('greetings').innerHTML = "Selamat " + day() + " " + retVal;
+    }
+}
 
 const formatter = new Intl.NumberFormat('en-US', {
     minimumFractionDigits: 2,
@@ -68,44 +83,9 @@ function countKerucut() {
     document.getElementById('luasKerucut').innerHTML = "Luas Permukaan Kerucut: " + num(formatter.format((Math.PI * Math.pow(jarijari, 2) + Math.PI * jarijari * garisPelukis))) + " m" + "2".sup();
     document.getElementById('volumeKerucut').innerHTML = "Volume Kerucut: " + num(formatter.format((1 / 3 * Math.PI * Math.pow(jarijari, 2) * tinggi))) + " m" + "3".sup();
 
-
     if (x.style.display === 'none') {
         x.style.display = 'none';
     } else {
         x.style.display = 'block';
-    }
-}
-
-
-function day() {
-    var d = new Date();
-    var s = d.getSeconds();
-    var m = d.getMinutes();
-    var h = parseInt(d.getHours());
-    var waktu = "";
-    if (h >= 0 && h <= 10) {
-        waktu = "Pagi,";
-    } else if (h >= 11 && h <= 14) {
-        waktu = "Siang,";
-    } else if (h >= 14 && h <= 18) {
-        waktu = "Sore,";
-    } else {
-        waktu = "Malam,";
-    }
-
-    return waktu;
-}
-
-function greetings() {
-    var retVal = "";
-    var ulang = true;
-    if (ulang == true) {
-        retVal = prompt("Masukkan nama untuk melanjutkan : ", "your name here");
-        console.log(day());
-        document.getElementById('greetings').innerHTML = "Selamat " + day() + " " + retVal;
-        ulang = false;
-    } else {
-        console.log(day());
-        document.getElementById('greetings').innerHTML = "Selamat " + day() + " " + retVal;
     }
 }
